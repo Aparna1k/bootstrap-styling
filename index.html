@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tourist Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">TravelGo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header id="home" class="hero-section text-white text-center d-flex align-items-center" 
+      style="background: url('images/hero.jpg') no-repeat center center/cover; height: 100vh;">
+        <div class="container">
+        <h1 class="display-3">Explore the World</h1>
+        <p class="lead">Find your next adventure with us</p>
+        <a href="#destinations" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+       </header>
+       <section id="destinations" class="container my-5">
+        <h2 class="text-center">Top Destinations</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/paris.jpg" class="card-img-top" alt="Paris">
+              <div class="card-body">
+                <h5 class="card-title">Paris, France</h5>
+                <p class="card-text">Experience the romance of the Eiffel Tower and exquisite cuisine.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/maldives.jpg" class="card-img-top" alt="Maldives">
+              <div class="card-body">
+                <h5 class="card-title">Maldives</h5>
+                <p class="card-text">Relax on stunning beaches with crystal-clear waters.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/bali.jpg" class="card-img-top" alt="Bali">
+              <div class="card-body">
+                <h5 class="card-title">Bali, Indonesia</h5>
+                <p class="card-text">Explore lush jungles, temples, and breathtaking coastlines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <h2 class="text-center">What Our Travelers Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <p>"Best travel experience! The guides were fantastic, and the destinations were amazing."</p>
+              <h5>- John Doe</h5>
+            </div>
+            <div class="carousel-item text-center">
+              <p>"A seamless and wonderful vacation! Highly recommended."</p>
+              <h5>- Sarah Johnson</h5>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+      <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form onsubmit="sendMessage(event)">
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+      <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 TravelGo. All rights reserved.</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        function sendMessage(event) {
+          event.preventDefault(); // Prevent form from refreshing the page
+          alert("Message successfully sent!");
+        }
+      </script>
+      </body>
+      </html>
+
+
+      
+      
+      
+      
